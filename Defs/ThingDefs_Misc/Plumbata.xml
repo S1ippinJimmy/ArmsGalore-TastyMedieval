@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged_Throwing">
+		<defName>CGF1_MWP_Plumbata_</defName>
+		<label>plumbata</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Plumbata</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T0_IronAgeRanged</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>531</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Steel>15</Steel>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.8</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>		
+			<li>CGF1_ThrowingLight_Antiquity</li>
+			<li>CGF1_ThrowingLight_Medieval</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Medieval_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Projectile_Plumbata</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>19.9</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Projectile_Plumbata</defName>
+		<label>plumbata</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/Plumbata</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<speed>42</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

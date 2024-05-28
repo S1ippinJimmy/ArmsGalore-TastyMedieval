@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_MorningStar</defName>
+		<label>morning star</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/MorningStar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.87</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T0_MedievalMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<relicChance>1</relicChance>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1.3</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+			
+			<li>CGF1_Bludgeon_Medieval</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Medieval_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			 <li>
+
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<armorPenetration>0.20</armorPenetration>
+				<cooldownTime>2.06</cooldownTime>
+			  </li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Melee</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

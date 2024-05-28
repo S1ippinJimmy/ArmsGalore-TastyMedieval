@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Claidheamh_Mor</defName>
+		<label>claidheamh mor</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Claidheamh_Mor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>150</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>Woody</li>-->
+		</stuffCategories>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.4</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeAdvanced</li>
+			
+			<li>CGF1_Sword_Medieval_Great</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Medieval_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+				<li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>3</cooldownTime>
+				<armorPenetration>0.35</armorPenetration>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>3</cooldownTime>
+				<armorPenetration>0.35</armorPenetration>
+			  </li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.25,0.0,0.30)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>-65</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.35,0.00,0.30)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-65</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.25,0.00,0.30)</drawOffset>
+						<angleOffset>-65</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.35,0.0,0.30)</drawOffset>
+						<angleOffset>65</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions> 
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Melee</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

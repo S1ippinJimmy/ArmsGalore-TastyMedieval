@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged_Throwing">
+		<defName>CGF1_MWP_Heavy_ThrowingAxe_</defName>
+		<label>heavy throwing axe</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Heavy_ThrowingAxe</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T0_IronAgeRanged</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>531</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>1.4</Mass>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.78</AccuracyShort>
+			<AccuracyMedium>0.30</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>		
+			<li>CGF1_ThrowingLight_Viking</li>
+			<li>CGF1_ThrowingHeavy_Medieval</li>
+			<li>CGF1_ThrowingHeavy_Viking</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Medieval_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Projectile_Heavy_ThrowingAxe</defaultProjectile>
+				<warmupTime>3.2</warmupTime>
+				<range>12.9</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Projectile_Heavy_ThrowingAxe</defName>
+		<label>heavy throwing axe</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/Heavy_ThrowingAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<spinRate>0.4</spinRate>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

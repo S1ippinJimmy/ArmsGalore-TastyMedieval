@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Ahlspiess</defName>
+		<label>ahlspiess</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Ahlspiess</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<relicChance>1</relicChance>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>2.2</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeAdvanced</li>
+			
+			<li>CGF1_Spear_Renaissance</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Medieval_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.45</cooldownTime>
+			</li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.45</cooldownTime>
+			  </li>
+		</tools>
+		<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponDraftedDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.40)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</north>
+				<east>
+					<drawOffset>(0.1,0,0.40)</drawOffset>
+					<angleOffset>-122</angleOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.40)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</south>
+				<west>
+					<drawOffset>(-0.1,0,0.40)</drawOffset>
+					<angleOffset>122</angleOffset>
+				</west>
+			</weaponDraftedDrawOffsets>		
+		</li>
+	</modExtensions>
+	</ThingDef>
+	
+</Defs>
