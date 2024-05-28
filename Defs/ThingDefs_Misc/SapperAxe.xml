@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_SapperAxe</defName>
+		<label>sapper axe</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/SapperAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T0_MedievalMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>Woody</li>-->
+		</stuffCategories>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<relicChance>0.5</relicChance>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.7</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+			
+			<li>CGF1_Axe_Medieval</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Medieval_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+			  <li>
+				<label>head</label>
+				<capacities>
+				  <li>Demolish</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1</cooldownTime>
+			  </li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

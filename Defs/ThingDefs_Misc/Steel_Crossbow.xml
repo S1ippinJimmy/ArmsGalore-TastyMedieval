@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged">
+		<defName>CGF1_MWP_Steel_Crossbow_</defName>
+		<label>steel crossbow</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Steel_Crossbow</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T0_MedievalRanged</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>531</displayPriority>
+		</recipeMaker>
+		<costList>
+			<WoodLog>75</WoodLog>
+			<Steel>30</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.58</AccuracyTouch>
+			<AccuracyShort>0.76</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>4.2</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>1.0</relicChance>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>		
+			<li>CGF1_Crossbow_Medieval</li>
+			<li>CGF1_Crossbow_Renaissance</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Medieval_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bolt_Steel_Crossbow</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>25.9</range>
+				<soundCast>CGF1_MWP_SFX_Crossbow1</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Bolt_Steel_Crossbow</defName>
+		<label>steel crossbow bolt</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/Arrow_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

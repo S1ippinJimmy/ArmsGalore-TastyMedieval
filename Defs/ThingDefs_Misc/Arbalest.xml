@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged">
+		<defName>CGF1_MWP_Arbalest_</defName>
+		<label>arbalest</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Arbalest</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceRanged</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>531</displayPriority>
+		</recipeMaker>
+		<costList>
+			<WoodLog>50</WoodLog>
+			<Steel>60</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>4.3</Mass>
+			<AccuracyTouch>0.64</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>4.6</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>1.0</relicChance>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>		
+			<li>CGF1_Crossbow_Medieval</li>
+			<li>CGF1_Crossbow_Renaissance</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Medieval_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bolt_Arbalest</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>29.9</range>
+				<soundCast>CGF1_MWP_SFX_Crossbow1</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Bolt_Arbalest</defName>
+		<label>arbalest bolt</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/Arrow_Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>63</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>
