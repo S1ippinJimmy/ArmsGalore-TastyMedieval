@@ -35,7 +35,6 @@
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<techLevel>Medieval</techLevel>
-		<equippedAngleOffset>-65</equippedAngleOffset>
 		<weaponTags>		
 			<li>CGF1_Bow_Medieval</li>
 			<li>CGF1_Bow_Renaissance</li>

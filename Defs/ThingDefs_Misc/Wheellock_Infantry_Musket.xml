@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Musket_T5">
+		<defName>CGF1_MWP_Wheellock_Infantry_Musket_</defName>
+		<label>Wheellock Infantry Musket</label>
+		<description>Caliber: .75 Caliber Ball. 1-round chamber. Single-Shot.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Wheellock_Infantry_Musket</texPath>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith_Old</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>65</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5</Mass>
+			<AccuracyTouch>0.62</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>3.75</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Musket_Renaissance</li>
+			<li>CGF1_Rifle_Musket</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Medieval_Gun</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_75CaliberBall</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Musket3</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.65,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Common</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

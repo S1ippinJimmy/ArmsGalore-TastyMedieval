@@ -90,6 +90,7 @@
 				</weaponDraftedDrawOffsets>		
 			</li>
 		</modExtensions>
+		<generateCommonality>0.5</generateCommonality> <!-- Abundant -->
 	</ThingDef>
 	
 </Defs>

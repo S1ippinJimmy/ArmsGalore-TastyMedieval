@@ -75,6 +75,7 @@
 				<cooldownTime>2</cooldownTime>
 			  </li>
 		</tools>
+		<generateCommonality>0.5</generateCommonality> <!-- Abundant -->
 	</ThingDef>
 	
 </Defs>

@@ -73,6 +73,7 @@
 				<cooldownTime>2.15</cooldownTime>
 			  </li>
 		</tools>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
 	</ThingDef>
 	
 </Defs>

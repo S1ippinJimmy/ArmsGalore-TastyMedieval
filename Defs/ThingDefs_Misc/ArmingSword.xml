@@ -97,6 +97,7 @@
 		<thingSetMakerTags>
 			<li>CGF1_GunsGalore_RewardAncient_Melee</li>
 		</thingSetMakerTags>
+		<generateCommonality>1.5</generateCommonality> <!-- Everywhere -->
 	</ThingDef>
 	
 </Defs>

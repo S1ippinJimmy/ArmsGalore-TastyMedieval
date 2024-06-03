@@ -18,7 +18,7 @@
 			</recipeUsers>
 			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceRanged</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 			<displayPriority>531</displayPriority>
 		</recipeMaker>

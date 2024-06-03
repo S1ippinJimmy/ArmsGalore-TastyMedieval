@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Musket_T6">
+		<defName>CGF1_MWP_Matchlock_Warsaw_Arquebus_</defName>
+		<label>Matchlock Warsaw Arquebus</label>
+		<description>Caliber: .65 Caliber Ball. 1-round chamber. Single-Shot.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Matchlock_Warsaw_Arquebus</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith_Old</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>25</WoodLog>
+			<Steel>60</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.62</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>3.85</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Musket_Renaissance</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Medieval_Gun</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_65CaliberBall</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Musket3</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.55,0.08)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

@@ -67,27 +67,28 @@
 			  </li>
 		</tools>
 		<modExtensions>
-		<li Class="VFECore.ThingDefExtension">
-			<weaponDraftedDrawOffsets>
-				<north>
-					<drawOffset>(0.34,0,0.50)</drawOffset>
-					<angleOffset>-143</angleOffset>
-				</north>
-				<east>
-					<drawOffset>(0.1,0,0.50)</drawOffset>
-					<angleOffset>-122</angleOffset>
-				</east>
-				<south>
-					<drawOffset>(-0.34,0,0.50)</drawOffset>
-					<angleOffset>-143</angleOffset>
-				</south>
-				<west>
-					<drawOffset>(-0.1,0,0.50)</drawOffset>
-					<angleOffset>122</angleOffset>
-				</west>
-			</weaponDraftedDrawOffsets>		
-		</li>
-	</modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.50)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.1,0,0.50)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.50)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.1,0,0.50)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>		
+			</li>
+		</modExtensions>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
 	</ThingDef>
 	
 </Defs>

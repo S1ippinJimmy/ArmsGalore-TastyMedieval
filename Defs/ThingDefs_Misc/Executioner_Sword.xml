@@ -66,6 +66,7 @@
 				<armorPenetration>0.35</armorPenetration>
 			  </li>
 		</tools>
+		<generateCommonality>0.10</generateCommonality> <!-- Average -->
 	</ThingDef>
 	
 </Defs>
