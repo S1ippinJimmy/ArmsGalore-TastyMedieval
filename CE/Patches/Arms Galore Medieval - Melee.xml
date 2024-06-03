@@ -659,6 +659,58 @@
 		</value>
 	</Operation>
 	
+	<!-- Executioner's Sword -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CGF1_MWP_Executioner_Sword"]/statBases</xpath>
+		<value>
+			<Bulk>11</Bulk>
+			<MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CGF1_MWP_Executioner_Sword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.30</MeleeCritChance>
+				<MeleeParryChance>1.20</MeleeParryChance>
+				<MeleeDodgeChance>0.50</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CGF1_MWP_Executioner_Sword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.69</cooldownTime>
+					<chanceFactor>0.05</chanceFactor>
+					<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>49</power>
+					<cooldownTime>2.9</cooldownTime>
+					<chanceFactor>0.45</chanceFactor>
+					<armorPenetrationBlunt>3.592</armorPenetrationBlunt>
+					<armorPenetrationSharp>0.58</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
 	<!-- Falchion -->
 	
 	<Operation Class="PatchOperationAdd">

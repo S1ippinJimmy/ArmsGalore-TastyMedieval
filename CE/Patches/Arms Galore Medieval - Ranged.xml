@@ -9,7 +9,8 @@
 							defName = "CGF1_MWP_Composite_Bow_" or
 							defName = "CGF1_MWP_Continental_WarBow_" or
 							defName = "CGF1_MWP_English_Longbow_" or
-							defName = "CGF1_MWP_Heavy_RecurveBow_"
+							defName = "CGF1_MWP_Heavy_RecurveBow_" or
+							defName = "CGF1_MWP_StaffSling_"
 						]/tools
 					</xpath>
 					<value>
@@ -28,6 +29,31 @@
 				
 				<!-- Bows -->
 				
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>CGF1_MWP_StaffSling_</defName>
+					<statBases>
+                        <SightsEfficiency>0.8</SightsEfficiency>
+                        <ShotSpread>1</ShotSpread>
+                        <SwayFactor>2</SwayFactor>
+                        <Bulk>4</Bulk>
+						<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+					</statBases>
+					<Properties>
+                           <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                           <hasStandardCommand>true</hasStandardCommand>
+                           <defaultProjectile>Projectile_SlingBullet_Stone</defaultProjectile>
+                           <warmupTime>2.4</warmupTime>
+                           <range>36</range>
+                           <soundCast>ThrowGrenade</soundCast>
+                     </Properties>
+					 <AmmoUser>
+						<reloadTime>3.8</reloadTime>
+						<ammoSet>AmmoSet_SlingBullet</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aiAimMode>AimedShot</aiAimMode>
+					</FireModes>
+				</li>
 				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 					<defName>CGF1_MWP_Composite_Bow_</defName>
 					<statBases>
